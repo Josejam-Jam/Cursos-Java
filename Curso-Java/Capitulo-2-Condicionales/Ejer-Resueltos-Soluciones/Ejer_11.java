@@ -4,6 +4,8 @@
  */
 package curso_inicio_capitulo_2;
 
+import java.util.Scanner;
+
 /**
  *
  *  Ejer 11     Pedir una nota de 0 a 10 y mostrarla de la forma: Insuficiente 
@@ -19,8 +21,42 @@ public class Ejer_11 {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        int nota;
+        String calificacion;
+        
+        System.out.println("Mostrar la Calificaciones");
+        
+        nota = sc.nextInt();
+        
+        calificacion = calificacion(nota);
         
         
+        System.out.println("Calificación:\t" + calificacion);
+        
+        
+    }
+    
+    /* FUNCIONES     */
+    
+    public static String calificacion(int nota) {
+        
+        String result = "";
+            
+            if(nota <= 0 && nota < 5) {
+                result = "Insuficiente";
+            } else if(nota == 5) {
+                result = "Suficiente";
+            } else if(nota == 6) {
+                result = "Bien";
+            } else if(nota == 7 || nota == 8) {
+                result = "Notable";
+            } else if(nota == 9 || nota == 10) {
+                result = "Sobresaliente";
+            }
+            
+        return result;
         
     }
 }
