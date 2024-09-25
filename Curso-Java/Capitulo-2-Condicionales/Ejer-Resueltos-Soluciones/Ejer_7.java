@@ -19,11 +19,16 @@ public class Ejer_7 {
      */
     public static void main(String args[]) {
         
+        // Lector
         Scanner sc = new Scanner(System.in);
+        
+        // Varibles de entorno
         int num1, num2, num3;
         
+        // Mostramos un mensaje
         System.out.println("Mostramos dos números ordenados de forma decreciente");
         
+        // Pedimos los datos
         System.out.println("Introduce un número");
         num1 = sc.nextInt();
         
@@ -52,20 +57,22 @@ public class Ejer_7 {
         int mayor = 0;
         int menor = 0;
         int interm = 0;
-        
-            if(num1 < num2 && num1 < num3){
-                menor = num1;
-                mayor = (num2 < num3?num3:num2);
-                interm = (mayor == num3?num2:num3);
-            } else if(num1 > num2 && num1 > num3) {
+            
+            if (num1 > num2 && num1 > num3) {  
                 mayor = num1;
-                menor = (num2 > num3?num3:num2);
-                interm = (menor == num2?num3:num2);
-            } else if(num2 > num3 && num2 > num1) {
+                interm = (num2 > num3?num2:num3);
+                menor = (interm == num2?num3:num2);
+                
+            } else if (num2 > num1 && num2 > num3) {
                 mayor = num2;
-                menor = (num3 < num1?num3:num1);
-                interm = (menor == num3?num1:num3);
-            }
+                interm = (num1 > num3?num1:num3);
+                menor = (interm == num1?num3:num1);
+
+            } else if (num3 > num1 && num3 > num2) {
+                mayor = num3;
+                interm = (num1 > num2?num1:num2);
+                menor = (interm == num1?num2:num1);
+            }            
         
         System.out.println("\n" + mayor + ", " + interm + ", " + menor);
     }
