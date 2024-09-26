@@ -48,7 +48,7 @@ public class Ejer_12 {
                     
                     fechaCorrecta = true;
                     
-                } else if((mes == 4 || mes == 6 || mes == 9 || mes == 11) && (1 >= dia && dia >= 30)) {
+                } else if((mes == 4 || mes == 6 || mes == 9 || mes == 11) && (1 >= dia && dia <= 30)) {
                     
                     fechaCorrecta = true;
                     
