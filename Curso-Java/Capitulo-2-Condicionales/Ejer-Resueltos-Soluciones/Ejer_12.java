@@ -63,7 +63,7 @@ public class Ejer_12 {
                 }
                 
             }
-        System.out.println("\nLa Fecha Introducida " + dia + "-" + mes + "-" + year);
+        System.out.println("\nLa Fecha Introducida " + dia + "-" + mes + "-" + year + ((fechaCorrecta)?"\tEs Correcta":"\tNo es correcta"));
         
     }
     
