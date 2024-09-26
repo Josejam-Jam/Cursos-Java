@@ -63,6 +63,7 @@ public class Ejer_12 {
                 }
                 
             }
+        System.out.println("\nLa Fecha Introducida " + dia + "-" + mes + "-" + year);
         
     }
     
