@@ -56,10 +56,14 @@ public class Ejer_13 {
             if((seg + 1) == 60) {
                 min++;
                 seg = 0;
-            } else if(min == 60) {
+            }
+            
+            if(min == 60) {
                 hora++;
                 min = 0;
-            } else if(hora > 23) {
+            }
+            
+            if(hora > 23) {
                 hora = 0;
             }
             
