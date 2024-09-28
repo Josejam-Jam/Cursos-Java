@@ -52,7 +52,7 @@ public class Ejer_14 {
                 result = 28;
             }
             
-            if(mes == 4 || mes == 6 || mes == 9 || mes == 11 || mes == 12) {
+            if(mes == 4 || mes == 6 || mes == 9 || mes == 11) {
                 result = 30;
             }
             
