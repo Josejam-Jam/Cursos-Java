@@ -49,7 +49,7 @@ public class Ejer_14 {
         int result = 0;
         
             if(mes == 2){
-                result = 29;
+                result = 28;
             }
             
             if(mes == 4 || mes == 6 || mes == 9 || mes == 11 || mes == 12) {
